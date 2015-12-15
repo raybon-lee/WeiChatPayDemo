@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04DC03761B6B569B00144573 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC03751B6B569B00144573 /* main.m */; };
+		04DC03791B6B569B00144573 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC03781B6B569B00144573 /* AppDelegate.m */; };
+		04DC037C1B6B569B00144573 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC037B1B6B569B00144573 /* ViewController.m */; };
+		04DC037F1B6B569B00144573 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DC037D1B6B569B00144573 /* Main.storyboard */; };
+		04DC03811B6B569B00144573 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DC03801B6B569B00144573 /* Images.xcassets */; };
+		04DC03841B6B569B00144573 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DC03821B6B569B00144573 /* LaunchScreen.xib */; };
+		04DC03901B6B569B00144573 /* WeiXinPayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC038F1B6B569B00144573 /* WeiXinPayDemoTests.m */; };
+		04DC039D1B6B56F100144573 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC039A1B6B56F100144573 /* libWeChatSDK.a */; };
+		04DC03AE1B6B571E00144573 /* ApiXml.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04DC03A91B6B571E00144573 /* ApiXml.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		04DC03AF1B6B571E00144573 /* payRequsestHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04DC03AB1B6B571E00144573 /* payRequsestHandler.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		04DC03B01B6B571E00144573 /* WXUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04DC03AD1B6B571E00144573 /* WXUtil.mm */; };
+		04DC03B21B6B575200144573 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC03B11B6B575200144573 /* SystemConfiguration.framework */; };
+		04DC03B41B6B575A00144573 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC03B31B6B575A00144573 /* libz.dylib */; };
+		04DC03B61B6B576100144573 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC03B51B6B576100144573 /* libsqlite3.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04DC038A1B6B569B00144573 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04DC03681B6B569B00144573 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DC036F1B6B569B00144573;
+			remoteInfo = WeiXinPayDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04DC03701B6B569B00144573 /* WeiXinPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiXinPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DC03741B6B569B00144573 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DC03751B6B569B00144573 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04DC03771B6B569B00144573 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04DC03781B6B569B00144573 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04DC037A1B6B569B00144573 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04DC037B1B6B569B00144573 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04DC037E1B6B569B00144573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04DC03801B6B569B00144573 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		04DC03831B6B569B00144573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		04DC03891B6B569B00144573 /* WeiXinPayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiXinPayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DC038E1B6B569B00144573 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DC038F1B6B569B00144573 /* WeiXinPayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiXinPayDemoTests.m; sourceTree = "<group>"; };
+		04DC039A1B6B56F100144573 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		04DC039B1B6B56F100144573 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		04DC039C1B6B56F100144573 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		04DC03A81B6B571E00144573 /* ApiXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiXml.h; sourceTree = "<group>"; };
+		04DC03A91B6B571E00144573 /* ApiXml.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ApiXml.mm; sourceTree = "<group>"; };
+		04DC03AA1B6B571E00144573 /* payRequsestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payRequsestHandler.h; sourceTree = "<group>"; };
+		04DC03AB1B6B571E00144573 /* payRequsestHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = payRequsestHandler.mm; sourceTree = "<group>"; };
+		04DC03AC1B6B571E00144573 /* WXUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXUtil.h; sourceTree = "<group>"; };
+		04DC03AD1B6B571E00144573 /* WXUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WXUtil.mm; sourceTree = "<group>"; };
+		04DC03B11B6B575200144573 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		04DC03B31B6B575A00144573 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		04DC03B51B6B576100144573 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04DC036D1B6B569B00144573 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DC03B61B6B576100144573 /* libsqlite3.0.dylib in Frameworks */,
+				04DC03B41B6B575A00144573 /* libz.dylib in Frameworks */,
+				04DC03B21B6B575200144573 /* SystemConfiguration.framework in Frameworks */,
+				04DC039D1B6B56F100144573 /* libWeChatSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DC03861B6B569B00144573 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04DC03671B6B569B00144573 = {
+			isa = PBXGroup;
+			children = (
+				04DC03B51B6B576100144573 /* libsqlite3.0.dylib */,
+				04DC03B31B6B575A00144573 /* libz.dylib */,
+				04DC03B11B6B575200144573 /* SystemConfiguration.framework */,
+				04DC03721B6B569B00144573 /* WeiXinPayDemo */,
+				04DC038C1B6B569B00144573 /* WeiXinPayDemoTests */,
+				04DC03711B6B569B00144573 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04DC03711B6B569B00144573 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04DC03701B6B569B00144573 /* WeiXinPayDemo.app */,
+				04DC03891B6B569B00144573 /* WeiXinPayDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04DC03721B6B569B00144573 /* WeiXinPayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04DC03771B6B569B00144573 /* AppDelegate.h */,
+				04DC03781B6B569B00144573 /* AppDelegate.m */,
+				04DC037A1B6B569B00144573 /* ViewController.h */,
+				04DC037B1B6B569B00144573 /* ViewController.m */,
+				04DC03991B6B56E700144573 /* 支付的三方库 */,
+				04DC037D1B6B569B00144573 /* Main.storyboard */,
+				04DC03801B6B569B00144573 /* Images.xcassets */,
+				04DC03821B6B569B00144573 /* LaunchScreen.xib */,
+				04DC03731B6B569B00144573 /* Supporting Files */,
+			);
+			path = WeiXinPayDemo;
+			sourceTree = "<group>";
+		};
+		04DC03731B6B569B00144573 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04DC03741B6B569B00144573 /* Info.plist */,
+				04DC03751B6B569B00144573 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04DC038C1B6B569B00144573 /* WeiXinPayDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				04DC038F1B6B569B00144573 /* WeiXinPayDemoTests.m */,
+				04DC038D1B6B569B00144573 /* Supporting Files */,
+			);
+			path = WeiXinPayDemoTests;
+			sourceTree = "<group>";
+		};
+		04DC038D1B6B569B00144573 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04DC038E1B6B569B00144573 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04DC03991B6B56E700144573 /* 支付的三方库 */ = {
+			isa = PBXGroup;
+			children = (
+				04DC03A71B6B571E00144573 /* lib */,
+				04DC039A1B6B56F100144573 /* libWeChatSDK.a */,
+				04DC039B1B6B56F100144573 /* WXApi.h */,
+				04DC039C1B6B56F100144573 /* WXApiObject.h */,
+			);
+			path = "支付的三方库";
+			sourceTree = "<group>";
+		};
+		04DC03A71B6B571E00144573 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				04DC03A81B6B571E00144573 /* ApiXml.h */,
+				04DC03A91B6B571E00144573 /* ApiXml.mm */,
+				04DC03AA1B6B571E00144573 /* payRequsestHandler.h */,
+				04DC03AB1B6B571E00144573 /* payRequsestHandler.mm */,
+				04DC03AC1B6B571E00144573 /* WXUtil.h */,
+				04DC03AD1B6B571E00144573 /* WXUtil.mm */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04DC036F1B6B569B00144573 /* WeiXinPayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DC03931B6B569B00144573 /* Build configuration list for PBXNativeTarget "WeiXinPayDemo" */;
+			buildPhases = (
+				04DC036C1B6B569B00144573 /* Sources */,
+				04DC036D1B6B569B00144573 /* Frameworks */,
+				04DC036E1B6B569B00144573 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeiXinPayDemo;
+			productName = WeiXinPayDemo;
+			productReference = 04DC03701B6B569B00144573 /* WeiXinPayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04DC03881B6B569B00144573 /* WeiXinPayDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DC03961B6B569B00144573 /* Build configuration list for PBXNativeTarget "WeiXinPayDemoTests" */;
+			buildPhases = (
+				04DC03851B6B569B00144573 /* Sources */,
+				04DC03861B6B569B00144573 /* Frameworks */,
+				04DC03871B6B569B00144573 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04DC038B1B6B569B00144573 /* PBXTargetDependency */,
+			);
+			name = WeiXinPayDemoTests;
+			productName = WeiXinPayDemoTests;
+			productReference = 04DC03891B6B569B00144573 /* WeiXinPayDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04DC03681B6B569B00144573 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					04DC036F1B6B569B00144573 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					04DC03881B6B569B00144573 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 04DC036F1B6B569B00144573;
+					};
+				};
+			};
+			buildConfigurationList = 04DC036B1B6B569B00144573 /* Build configuration list for PBXProject "WeiXinPayDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04DC03671B6B569B00144573;
+			productRefGroup = 04DC03711B6B569B00144573 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04DC036F1B6B569B00144573 /* WeiXinPayDemo */,
+				04DC03881B6B569B00144573 /* WeiXinPayDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04DC036E1B6B569B00144573 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DC037F1B6B569B00144573 /* Main.storyboard in Resources */,
+				04DC03841B6B569B00144573 /* LaunchScreen.xib in Resources */,
+				04DC03811B6B569B00144573 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DC03871B6B569B00144573 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04DC036C1B6B569B00144573 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DC03B01B6B571E00144573 /* WXUtil.mm in Sources */,
+				04DC03AE1B6B571E00144573 /* ApiXml.mm in Sources */,
+				04DC037C1B6B569B00144573 /* ViewController.m in Sources */,
+				04DC03791B6B569B00144573 /* AppDelegate.m in Sources */,
+				04DC03761B6B569B00144573 /* main.m in Sources */,
+				04DC03AF1B6B571E00144573 /* payRequsestHandler.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DC03851B6B569B00144573 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DC03901B6B569B00144573 /* WeiXinPayDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04DC038B1B6B569B00144573 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04DC036F1B6B569B00144573 /* WeiXinPayDemo */;
+			targetProxy = 04DC038A1B6B569B00144573 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04DC037D1B6B569B00144573 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04DC037E1B6B569B00144573 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04DC03821B6B569B00144573 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04DC03831B6B569B00144573 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04DC03911B6B569B00144573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04DC03921B6B569B00144573 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04DC03941B6B569B00144573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WeiXinPayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeiXinPayDemo/支付的三方库",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04DC03951B6B569B00144573 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WeiXinPayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeiXinPayDemo/支付的三方库",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04DC03971B6B569B00144573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeiXinPayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeiXinPayDemo.app/WeiXinPayDemo";
+			};
+			name = Debug;
+		};
+		04DC03981B6B569B00144573 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeiXinPayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeiXinPayDemo.app/WeiXinPayDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04DC036B1B6B569B00144573 /* Build configuration list for PBXProject "WeiXinPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DC03911B6B569B00144573 /* Debug */,
+				04DC03921B6B569B00144573 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DC03931B6B569B00144573 /* Build configuration list for PBXNativeTarget "WeiXinPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DC03941B6B569B00144573 /* Debug */,
+				04DC03951B6B569B00144573 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DC03961B6B569B00144573 /* Build configuration list for PBXNativeTarget "WeiXinPayDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DC03971B6B569B00144573 /* Debug */,
+				04DC03981B6B569B00144573 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04DC03681B6B569B00144573 /* Project object */;
+}
